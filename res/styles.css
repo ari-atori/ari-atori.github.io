@@ -1,0 +1,181 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "VT323", monospace;
+	background-color: #eee;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #333;
+	text-decoration-color: #333;
+}
+
+
+#sidebar {
+	width: 96px;
+	height: 100%;
+	background-color: #333; /* Charcoal color */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#sidebar > a {
+	font-size: 20px;
+	font-weight: 100;
+	color: #eee;
+	text-decoration-color: #eee;
+	display: inline-block;
+}
+
+#sidebar > a:link, #sidebar > a:visited, #sidebar > a:hover, #sidebar > a:active {
+	color: #eee;
+	text-decoration-color: #eee;
+}
+
+#sidebar > a > img {
+	width: 64px;
+	border-radius: 32px;
+	margin: 16px 16px 16px 16px;
+}
+
+#sidebar > a > svg {
+	color:#eee;
+	fill: #eee;
+	margin: 0 16px;
+}
+
+#sidebar > a > p {
+	color: #eee;
+	text-decoration-color: #eee;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+#footer {
+	height: 96px;
+	background-color: #ccc;
+	position: fixed;
+	bottom: 0;
+	left: 96px;
+	right: 0;
+}
+
+#footer > #central {
+	display: inline-block;
+	margin: auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#footer > #central > a {
+	display: inline-block;
+	margin: 8px;
+}
+
+#footer > #central > a > svg {
+	position:relative;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+#footer > #central > a > p {
+	font-size: 20px;
+	font-weight: 100;
+	color: #333;
+	text-decoration-color: #333;
+	text-align: center;
+	margin: auto;
+}
+
+#footer > #central > a:link, #footer > #central > a:visited, #footer > #central > a:hover, #footer > #central > a:active {
+	color: #333;
+	text-decoration-color: #333;
+}
+
+
+
+#content {
+	position: absolute;
+	left: 96px;
+	min-height: calc(100% - 96px);
+	min-width: calc(100% - 96px);
+	padding-bottom: 96px;
+	background-color: #eee;
+}
+
+#content > * {
+	margin: 8px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 64px;
+	margin: 24px;
+}
+
+h2 {
+	text-align: center;
+}
+
+
+#content > p {
+	font-size: 20px;
+}
+
+.article {
+	display: inline-block;
+	width: 320px;
+	border-radius: 32px;
+}
+
+.article.math {
+	background: radial-gradient(#DDF, #BBF);
+}
+
+.article > p.article {
+	font-size: 28px;
+	white-space: normal;
+	width: calc(100% - 32px);
+	margin: 16px 16px 24px 16px;
+}
+
+.article > p {
+	margin: 16px;
+}
+
+.art {
+	display: inline-block;
+}
+
+.art > img {
+	height: 320px;
+	border-radius: 32px;
+}
+
+.art > p {
+	font-size: 20px;
+	font-weight: 100;
+	color: #333;
+	text-decoration-color: #333;
+	text-align: center;
+	margin: 0;
+}
+
+.art > p > a:link, .art > p > a:visited, .art > p > a:hover,.art > p > a:active {
+	color: #333;
+	text-decoration-color: #333;
+}
+
+#content svg.math {
+	display:block;
+	margin: 8px auto 8px auto;
+}
+
+#content img.math {
+	display:block;
+	margin: 8px auto 8px auto;
+}

@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="/res/jquery.min.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/x-icon" href="/res/images/favicon.ico">
+		<link rel="stylesheet" href="/res/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+		<title> Ari Atori's Website</title>
+	</head>
+	<body>
+		<div id="sidebar"></div>
+		<div id="content">
+			<h1>ARI JAKTKATT ATORI</h1>
+			<hr/>
+			<h2> ABOUT ME </h2>
+			<p> I am a graphics and hardware acceleration engineer as well as a giant moron. I mostly came from a mathematics background, having done projects regarding automotive, machine learning, and game engines.  </p>
+			<br/>
+			<p> My main coding project is a <a href="pitchstone.html">video editor</a>, which I am rebuilding from scratch with a few new team members. </p>
+			<br/>
+			<p>I also edit random videos on the internet. However, my upload schedule, like your father, is just non-existent. However, my style of editing may give a hint as to why</p>
+			<img src="/res/images/davinci.png"/>
+			<p> Disclaimer: This is Davinci Resolve. My editor is still in its infancy.  </p>
+		</div>
+		<div id="footer"></div>
+		<script>
+			$("#sidebar").load("/res/template.html #sidebar", function(){});
+			$("#footer").load("/res/template.html #footer", function(){});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="/res/jquery.min.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/x-icon" href="/res/images/favicon.ico">
+		<link rel="stylesheet" href="/res/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+		<title> Ari Atori's Articles</title>
+	</head>
+	<body>
+		<div id="sidebar"></div>
+		<div id="content">
+			<h1>ARTICLES</h1>
+			<hr/>
+			<p>Here is a collection of articles I have written regarding anything from color theory, mathematics, graphics programming, and other topics interesting to me.</p>
+			<br/>
+			<a class="article math" href="centroids-of-2d-and-3d-objects.html">
+				<p class="article">Calculating the centroid of 2D and 3D objects</p>
+				<p> February 26, 2024</p>
+			</a>
+		</div>
+		<div id="footer"></div>
+		<script>
+			$("#sidebar").load("/res/template.html #sidebar", function(){});
+			$("#footer").load("/res/template.html #footer", function(){});
+		</script>
+	</body>
+</html>

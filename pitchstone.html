@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="/res/jquery.min.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/x-icon" href="/res/images/favicon.ico">
+		<link rel="stylesheet" href="/res/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+		<title> Pitchstone Editor</title>
+	</head>
+	<body>
+		<div id="sidebar"></div>
+		<div id="content">
+			<h1>PITCHSTONE EDITOR</h1>
+			<hr/>
+			<p>Pitchstone Editor is a current project of mine that was originally developed in OpenGL and GLFW, but is ultimately being transitioned over to Vulkan and SDL2.</p>
+			<p>Pitchstone is a modular, node-tree based video editor which allows for the use of custom primitive shaders and render jobs for videos. </p>
+			<br/>
+			<p>Source code for the <a href="https://github.com/Pitchstone-Development-Group/Pitchstone-Editor/tree/dev">Video Editor</a>
+			<p>Source code for the <a href="https://github.com/Pitchstone-Development-Group/Pitchstone-Filters">Filter Library</a>
+			<p>We plan for beta testing for around Mid 2025, but all contributions and testing are welcome. </p>
+			<p>Current build environment supports Windows and Ubuntu Linux. </p>
+			<br/>
+			<p>This page is a work in progress and will be updated over time</p>
+		</div>
+		<div id="footer"></div>
+		<script>
+			$("#sidebar").load("/res/template.html #sidebar", function(){});
+			$("#footer").load("/res/template.html #footer", function(){});
+		</script>
+	</body>
+</html>
