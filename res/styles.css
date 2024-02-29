@@ -1,3 +1,7 @@
+/********************************/
+/*********GENERAL*RULES**********/
+/********************************/
+
 body, html {
 	margin: 0;
 	padding: 0;
@@ -6,114 +10,9 @@ body, html {
 	background-color: #eee;
 }
 
-a:link, a:visited, a:hover, a:active {
-	color: #333;
-	text-decoration-color: #333;
-}
-
-
-#sidebar {
-	width: 96px;
-	height: 100%;
-	background-color: #333; /* Charcoal color */
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-
-#sidebar > a {
-	font-size: 20px;
-	font-weight: 100;
-	color: #eee;
-	text-decoration-color: #eee;
-	display: inline-block;
-}
-
-#sidebar > a:link, #sidebar > a:visited, #sidebar > a:hover, #sidebar > a:active {
-	color: #eee;
-	text-decoration-color: #eee;
-}
-
-#sidebar > a > img {
-	width: 64px;
-	border-radius: 32px;
-	margin: 16px 16px 16px 16px;
-}
-
-#sidebar > a > svg {
-	color:#eee;
-	fill: #eee;
-	margin: 0 16px;
-}
-
-#sidebar > a > p {
-	color: #eee;
-	text-decoration-color: #eee;
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: 16px;
-}
-
-#footer {
-	height: 96px;
-	background-color: #ccc;
-	position: fixed;
-	bottom: 0;
-	left: 96px;
-	right: 0;
-}
-
-#footer > #central {
-	display: inline-block;
-	margin: auto;
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-#footer > #central > a {
-	display: inline-block;
-	margin: 8px;
-}
-
-#footer > #central > a > svg {
-	position:relative;
-	left:50%;
-	transform: translateX(-50%);
-}
-
-#footer > #central > a > p {
-	font-size: 20px;
-	font-weight: 100;
-	color: #333;
-	text-decoration-color: #333;
-	text-align: center;
-	margin: auto;
-}
-
-#footer > #central > a:link, #footer > #central > a:visited, #footer > #central > a:hover, #footer > #central > a:active {
-	color: #333;
-	text-decoration-color: #333;
-}
-
-
-
-#content {
-	position: absolute;
-	left: 96px;
-	min-height: calc(100% - 96px);
-	min-width: calc(100% - 96px);
-	padding-bottom: 96px;
-	background-color: #eee;
-}
-
-#content > * {
-	margin: 8px;
-}
-
 h1 {
 	text-align: center;
-	font-size: 64px;
+	font-size: 32pt;
 	margin: 24px;
 }
 
@@ -121,6 +20,183 @@ h2 {
 	text-align: center;
 }
 
+img {
+	max-width: 90%;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: #333;
+	text-decoration-color: #333;
+}
+
+
+/********************************/
+/*********MAIN*MENU*RULES********/
+/********************************/
+
+#mainmenu {
+	width: 64pt;
+	height: 100%;
+	background-color: #111;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#mainmenu > a {
+	font-size: 14pt;
+	font-weight: 100;
+	color: #eee;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#mainmenu > a:link, #mainmenu > a:hover {
+	color: #eee;
+}
+
+#mainmenu > a > img {
+	width: 40pt;
+	border-radius: 24pt;
+	margin: 16pt 12pt;
+}
+
+#mainmenu > a > svg {
+	color:#eee;
+	fill: #eee;
+	margin: 0 16pt;
+	width: 32pt;
+	height: 32pt;
+	transition: 300ms ease-in-out;
+}
+
+#mainmenu > a > p {
+	color: #eee;
+	text-decoration: none;
+	text-decoration-color: #eee;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 16pt;
+	transition: 300ms ease-in-out;
+}
+
+#mainmenu > a.pitchstone:hover > p, #mainmenu > a.pitchstone:hover > svg {
+	color: #C8F;
+	fill: #C8F;
+	transition: 300ms ease-in-out;
+}
+
+#mainmenu > a.articles:hover > p, #mainmenu > a.articles:hover > svg {
+	color: #8CF;
+	fill: #8CF;
+	transition: 300ms ease-in-out;
+}
+
+#mainmenu > a.artpage:hover > p, #mainmenu > a.artpage:hover > svg {
+	color: #F8C;
+	fill: #F8C;
+	transition: 300ms ease-in-out;
+}
+
+
+/********************************/
+/**********FOOTER*RULES**********/
+/********************************/
+
+#footer {
+	height: 64pt;
+	background-color: #333;
+	position: fixed;
+	bottom: 0;
+	left: 64pt;
+	right: 0;
+}
+
+#footer > .central {
+	display: inline-block;
+	margin: auto;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#footer > .central > a {
+	display: inline-block;
+	margin: 8px;
+	text-decoration: none;
+}
+
+#footer > .central > a > svg {
+	position:relative;
+	left:50%;
+	transform: translateX(-50%);
+	width: 32pt;
+	height: 32pt;
+	fill: #EEE;
+	transition: 300ms ease-in-out;
+}
+
+#footer > .central > a > p {
+	font-size: 14pt;
+	font-weight: 100;
+	color: #EEE;
+	text-decoration-color: #EEE;
+	text-align: center;
+	margin: auto;
+	transition: 300ms ease-in-out;
+}
+
+#footer > .central > a:link, #footer > .central > a:visited, #footer > .central > a:hover, #footer > .central > a:active {
+	color: #333;
+	text-decoration-color: #333;
+}
+
+#footer > .central > a.youtube:hover > p, #footer > .central > a.youtube:hover > svg {
+	color: #FF6B6B;
+	fill: #FF6B6B;
+	transition: 300ms ease-in-out;
+}
+
+#footer > .central > a.github:hover > p, #footer > .central > a.github:hover > svg {
+	color: #A593C2;
+	fill: #A593C2;
+	transition: 300ms ease-in-out;
+}
+
+#footer > .central > a.discord:hover > p, #footer > .central > a.discord:hover > svg {
+	color: #8699DF;
+	fill: #8699DF;
+	transition: 300ms ease-in-out;
+}
+
+#footer > .central > a.twitter:hover > p, #footer > .central > a.twitter:hover > svg {
+	color: #21A2F2;
+	fill: #21A2F2;
+	transition: 300ms ease-in-out;
+}
+
+#footer > .central > a.twitch:hover > p, #footer > .central > a.twitch:hover > svg {
+	color: #A693CC;
+	fill: #A693CC;
+	transition: 300ms ease-in-out;
+}
+
+/********************************/
+/*********CONTENT*RULES**********/
+/********************************/
+
+#content {
+	position: absolute;
+	left: 64pt;
+	min-height: calc(100% - 64pt);
+	width: calc(100% - 64pt);
+	padding-bottom: 64pt;
+	background-color: #eee;
+}
+
+#content > * {
+	margin: 8px;
+}
 
 #content > p {
 	font-size: 20px;
@@ -128,23 +204,26 @@ h2 {
 
 .article {
 	display: inline-block;
-	width: 320px;
-	border-radius: 32px;
+	max-width: 90%;
+	width: 200pt;
+	border-radius: 16pt;
 }
 
 .article.math {
-	background: radial-gradient(#DDF, #BBF);
+	border-style: double;
+	border-width: 4pt;
+	background-color: #DEF;
 }
 
 .article > p.article {
 	font-size: 28px;
 	white-space: normal;
-	width: calc(100% - 32px);
-	margin: 16px 16px 24px 16px;
+	width: calc(100% - 16pt);
+	margin: 8pt 8pt 24px 8pt;
 }
 
 .article > p {
-	margin: 16px;
+	margin: 8pt;
 }
 
 .art {
@@ -152,8 +231,8 @@ h2 {
 }
 
 .art > img {
-	height: 320px;
-	border-radius: 32px;
+	max-height: 320px;
+	border-radius: 16pt;
 }
 
 .art > p {
@@ -173,9 +252,57 @@ h2 {
 #content svg.math {
 	display:block;
 	margin: 8px auto 8px auto;
+	max-width: 90%;
 }
 
 #content img.math {
 	display:block;
 	margin: 8px auto 8px auto;
+}
+
+/********************************/
+/********PORTRAIT*RULES**********/
+/********************************/
+
+@media (max-width: 500pt) {
+	
+	#footer {
+		height: 44pt;
+	}
+	.contacts {
+		display: none; /* hide child element when parent is less than 200pt */
+	}
+}
+
+@media screen and (orientation: portrait) {
+	#mainmenu {
+		height: 48pt;
+		width: 100%;
+	}
+	#mainmenu > a {
+		display: inline-block;
+		margin-bottom: 4pt;
+		vertical-align: middle;
+	}
+	#mainmenu > a > img {
+		margin: 4pt 8pt;
+	}
+	#mainmenu > a > svg {
+		margin-top: 0pt;
+		margin-bottom: 0;
+	}
+	#mainmenu > a > p {
+		margin-top: 0pt;
+		margin-bottom: 0pt;
+	}
+	#content {
+		left: 0;
+		top: 48pt;
+		min-height: calc(100% - 92pt);
+		width: 100%;
+	}
+	#footer {
+		left: 0;
+		height: 44pt;
+	}
 }

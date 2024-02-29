@@ -11,7 +11,6 @@
 		<title> Pitchstone Editor</title>
 	</head>
 	<body>
-		<div id="sidebar"></div>
 		<div id="content">
 			<h1>PITCHSTONE EDITOR</h1>
 			<hr/>
@@ -25,9 +24,10 @@
 			<br/>
 			<p>This page is a work in progress and will be updated over time</p>
 		</div>
+		<div id="mainmenu"></div>
 		<div id="footer"></div>
 		<script>
-			$("#sidebar").load("/res/template.html #sidebar", function(){});
+			$("#mainmenu").load("/res/template.html #mainmenu", function(){});
 			$("#footer").load("/res/template.html #footer", function(){});
 		</script>
 	</body>
